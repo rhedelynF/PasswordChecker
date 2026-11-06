@@ -1,0 +1,14 @@
+QUICK START
+
+1. Install a Java JDK (8 or newer).
+2. Open this folder in VS Code.
+3. Open the terminal in the project root.
+4. Run:
+   javac -d out src/PasswordChecker.java src/PasswordGenerator.java src/Main.java
+   java -cp out Main
+
+Run tests:
+   javac -d out src/PasswordChecker.java tests/PasswordCheckerTest.java
+   java -cp out PasswordCheckerTest
+
+Note: PasswordGenerator uses SecureRandom. The app does not store or transmit passwords.
